@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual DM Assistant — Shivani Kadakia</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../casestudy.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="cs-page cs-theme-project">
+
+  <!-- â”€â”€ Back nav â”€â”€ -->
+  <nav class="cs-topbar">
+    <div class="cs-topbar-inner">
+      <a href="../index.html#projects" class="cs-back">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+      <a href="../index.html" class="nav-logo">SK</a>
+    </div>
+  </nav>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       HERO
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <header class="cs-hero cs-hero--project">
+    <div class="cs-hero-inner">
+      <div class="cs-meta-row">
+        <span class="cs-badge">Case Study</span>
+        <span class="cs-badge cs-badge--blue">Healthcare</span>
+        <span class="cs-badge cs-badge--blue">Clinical Trials</span>
+        <span class="cs-badge cs-badge--muted">Conceptual Product</span>
+      </div>
+      <h1 class="cs-title">Virtual DM Assistant</h1>
+      <p class="cs-subtitle">Reducing re-queries in clinical trials by surfacing real-time, contextual guidance for site coordinators directly within the EDC.</p>
+
+      <div class="cs-hypothesis-box">
+        <p class="cs-hypothesis-label"><i class="fas fa-lightbulb"></i> Hypothesis</p>
+        <p class="cs-hypothesis-text">If the clinical trial database had a virtual DM assistant chatbot (which explained why the query exists and how to resolve it) for sites to use when answering queries, it would reduce the number of re-queries by 40%. By-products: decrease time to close queries by 30%, and reduce time to database lock by 2 weeks.</p>
+      </div>
+
+      <!-- Key stats row -->
+      <div class="cs-hero-stats">
+        <div class="cs-hero-stat">
+          <span class="cs-hero-stat-num">21%</span>
+          <span class="cs-hero-stat-label">of queries are re-queried</span>
+        </div>
+        <div class="cs-hero-stat-divider" aria-hidden="true"></div>
+        <div class="cs-hero-stat">
+          <span class="cs-hero-stat-num">52 days</span>
+          <span class="cs-hero-stat-label">avg. time to close a query</span>
+        </div>
+        <div class="cs-hero-stat-divider" aria-hidden="true"></div>
+        <div class="cs-hero-stat">
+          <span class="cs-hero-stat-num">$30–70</span>
+          <span class="cs-hero-stat-label">cost per query</span>
+        </div>
+        <div class="cs-hero-stat-divider" aria-hidden="true"></div>
+        <div class="cs-hero-stat">
+          <span class="cs-hero-stat-num">3,000–10,000</span>
+          <span class="cs-hero-stat-label">queries per moderate Phase 3 trial</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       MAIN CONTENT
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <main class="cs-main">
+    <div class="cs-layout">
+
+      <!-- â”€â”€ Sticky sidebar TOC â”€â”€ -->
+      <aside class="cs-toc" aria-label="Table of contents">
+        <p class="cs-toc-label">Contents</p>
+        <nav>
+          <ol class="cs-toc-list">
+            <li><a href="#discover" class="cs-toc-link">1. Discover</a>
+              <ol>
+                <li><a href="#context" class="cs-toc-link cs-toc-link--sub">Context</a></li>
+                <li><a href="#market" class="cs-toc-link cs-toc-link--sub">The Market</a></li>
+                <li><a href="#audience" class="cs-toc-link cs-toc-link--sub">The Audience</a></li>
+              </ol>
+            </li>
+            <li><a href="#define" class="cs-toc-link">2. Define</a>
+              <ol>
+                <li><a href="#journey" class="cs-toc-link cs-toc-link--sub">User Journey</a></li>
+                <li><a href="#takeaways" class="cs-toc-link cs-toc-link--sub">Big Takeaways</a></li>
+                <li><a href="#problem" class="cs-toc-link cs-toc-link--sub">Problem</a></li>
+                <li><a href="#goal" class="cs-toc-link cs-toc-link--sub">The Goal</a></li>
+              </ol>
+            </li>
+            <li><a href="#develop" class="cs-toc-link">3. Develop</a></li>
+            <li><a href="#deliver" class="cs-toc-link">4. Deliver</a>
+              <ol>
+                <li><a href="#gtm" class="cs-toc-link cs-toc-link--sub">GTM Strategy</a></li>
+                <li><a href="#metrics" class="cs-toc-link cs-toc-link--sub">Measuring Success</a></li>
+                <li><a href="#risks" class="cs-toc-link cs-toc-link--sub">Risks &amp; Tradeoffs</a></li>
+              </ol>
+            </li>
+            <li><a href="#future" class="cs-toc-link">Future Iterations</a></li>
+            <li><a href="#closing" class="cs-toc-link">Closing</a></li>
+          </ol>
+        </nav>
+      </aside>
+
+      <!-- â”€â”€ Article body â”€â”€ -->
+      <article class="cs-body">
+
+        <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             1. DISCOVER
+        â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section class="cs-section" id="discover">
+          <div class="cs-phase-label">
+            <span class="cs-phase-num">1</span>
+            <span class="cs-phase-name">Discover</span>
+          </div>
+
+          <!-- Context -->
+          <div class="cs-subsection" id="context">
+            <h2 class="cs-h2">Context</h2>
+            <p class="cs-p">From personal experience as a clinical data manager, I've observed that data cleaning for clinical trials heavily involves site queries in the clinical trial database. This requires a query to be raised by the DM manually or automatically by the system. It then requires the site to attend to the query — sometimes a response is needed or the data would be updated. In 21% of cases, there is back and forth if the data change or query response is not clear.</p>
+            <p class="cs-p">As per industry research, a moderate sized trial (200 patients in Phase 3) could have between 3,000–10,000 queries, and each query costs between $30–$70. It also takes a query an average of 52 days to close, which can delay database lock and analysis timelines.</p>
+          </div>
+
+          <!-- The Market -->
+          <div class="cs-subsection" id="market">
+            <h2 class="cs-h2">The Market</h2>
+            <div class="cs-market-grid">
+
+              <div class="cs-market-card cs-market-card--direct">
+                <div class="cs-market-card-header">
+                  <span class="cs-market-type-badge cs-market-type-badge--direct">Direct</span>
+                  <span class="cs-market-type-label">EDC Query Workflows</span>
+                </div>
+                <p class="cs-market-players">Medidata Rave · Veeva Vault · Oracle Inform</p>
+                <p class="cs-market-desc">Static query text + email clarification. Sites dig through lengthy eCRF guidelines.</p>
+                <span class="cs-competitor-gap">Missing: real-time explanation of query intent</span>
+              </div>
+
+              <div class="cs-market-card cs-market-card--adjacent">
+                <div class="cs-market-card-header">
+                  <span class="cs-market-type-badge cs-market-type-badge--adjacent">Adjacent</span>
+                  <span class="cs-market-type-label">AI in Clinical Data (Cleaning)</span>
+                </div>
+                <p class="cs-market-players">Medidata Detect Â· IQVIA AI Coding</p>
+                <p class="cs-market-desc">Anomaly detection and AI-assisted coding for data quality.</p>
+                <span class="cs-competitor-gap">Gap: No AI for human-in-the-loop query resolution</span>
+              </div>
+
+              <div class="cs-market-card cs-market-card--indirect">
+                <div class="cs-market-card-header">
+                  <span class="cs-market-type-badge cs-market-type-badge--indirect">Indirect</span>
+                  <span class="cs-market-type-label">Regulated AI Copilots</span>
+                </div>
+                <p class="cs-market-players">GitHub Copilot · MS Copilot for Healthcare</p>
+                <p class="cs-market-desc">Workflow augmentation tools in regulated environments (dev workflows, clinical notes).</p>
+                <span class="cs-competitor-gap cs-competitor-gap--green">Proof point: Human augmentation is viable even in regulated spaces</span>
+              </div>
+
+            </div>
+
+            <div class="cs-market-trends-box">
+              <p class="cs-channels-label">Market Trends</p>
+              <ul class="cs-ul">
+                <li>RBQM reducing total query volume → remaining queries increasingly complex</li>
+                <li>AI copilots proving workflow augmentation works in regulated industries</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- The Audience -->
+          <div class="cs-subsection" id="audience">
+            <h2 class="cs-h2">The Audience</h2>
+            <div class="cs-persona-grid">
+
+              <div class="cs-persona-card cs-persona-card--primary">
+                <div class="cs-persona-header">
+                  <div class="cs-persona-icon"><i class="fas fa-clipboard-user"></i></div>
+                  <div>
+                    <p class="cs-persona-tag">Persona 1 · Primary</p>
+                    <h3 class="cs-persona-name">The Site Coordinator <span class="cs-persona-alias">"So-Much-To-Do"</span></h3>
+                  </div>
+                </div>
+                <dl class="cs-persona-dl">
+                  <dt>Motivated by</dt>
+                  <dd>Resolving data management queries and other data quality issues so their site doesn't have bad metrics or protocol deviations.</dd>
+                  <dt>Pain Points</dt>
+                  <dd>Lots of documentation everywhere — for labs, data management, devices, pharmacy. Must review a 50+ page eCRF completion guideline to understand a data entry issue and maybe get an understanding of how to resolve it.</dd>
+                  <dt>What they hope for</dt>
+                  <dd>Immediate assistance when answering queries. Currently they raise issues to the CRA, who reaches out to the DM if they can't solve it — via email, with back and forth, sometimes looping in Clinical Science for complex issues.</dd>
+                </dl>
+              </div>
+
+              <div class="cs-persona-card cs-persona-card--secondary">
+                <div class="cs-persona-header">
+                  <div class="cs-persona-icon"><i class="fas fa-table-cells"></i></div>
+                  <div>
+                    <p class="cs-persona-tag">Persona 2 · Secondary</p>
+                    <h3 class="cs-persona-name">The Data Manager <span class="cs-persona-alias">"Deep-in-the-Data"</span></h3>
+                  </div>
+                </div>
+                <dl class="cs-persona-dl">
+                  <dt>Motivated by</dt>
+                  <dd>Highest quality data and ways to detect and clean data efficiently.</dd>
+                  <dt>Pain Points</dt>
+                  <dd>Some queries must be manual. Communication with the site is only via the query. Due to large trials and time zone differences, they cannot support at the time the coordinator needs. DMs receive emails with lag in responding, then write detailed emails on how to solve — very time consuming. The same email is often sent by multiple CRAs.</dd>
+                </dl>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             2. DEFINE
+        â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section class="cs-section" id="define">
+          <div class="cs-phase-label">
+            <span class="cs-phase-num">2</span>
+            <span class="cs-phase-name">Define</span>
+          </div>
+
+          <!-- User Journey -->
+          <div class="cs-subsection" id="journey">
+            <h2 class="cs-h2">Current Query Resolution Journey</h2>
+            <ol class="cs-journey-list">
+
+              <li class="cs-journey-step">
+                <div class="cs-journey-num">1</div>
+                <div class="cs-journey-content">
+                  <h4 class="cs-journey-title">DM Detects Discrepancy</h4>
+                  <p class="cs-journey-desc">Manual review by the Data Manager identifies a data discrepancy in the EDC.</p>
+                </div>
+              </li>
+
+              <li class="cs-journey-step">
+                <div class="cs-journey-num">2</div>
+                <div class="cs-journey-content">
+                  <h4 class="cs-journey-title">DM Writes Query in EDC</h4>
+                  <p class="cs-journey-desc">Query is raised in the EDC and a notification is sent to the site.</p>
+                </div>
+              </li>
+
+              <li class="cs-journey-step cs-journey-step--pain">
+                <div class="cs-journey-num">3</div>
+                <div class="cs-journey-content">
+                  <h4 class="cs-journey-title">Site Coordinator Sees Query</h4>
+                  <p class="cs-journey-desc">The coordinator sees the query among 20–30+ others in the database.</p>
+                  <div class="cs-pain-point"><i class="fas fa-triangle-exclamation"></i> Pain Point: No context about query intent.</div>
+                </div>
+              </li>
+
+              <li class="cs-journey-step cs-journey-step--pain">
+                <div class="cs-journey-num">4</div>
+                <div class="cs-journey-content">
+                  <h4 class="cs-journey-title">Site Interprets &amp; Responds</h4>
+                  <p class="cs-journey-desc">Coordinator attempts to understand and respond to the query.</p>
+                  <div class="cs-pain-point"><i class="fas fa-triangle-exclamation"></i> Pain Point: Must cross-reference patient documents + 50-page eCRF manual.</div>
+                </div>
+              </li>
+
+              <li class="cs-journey-step cs-journey-step--pain">
+                <div class="cs-journey-num">5</div>
+                <div class="cs-journey-content">
+                  <h4 class="cs-journey-title">DM Reviews Response</h4>
+                  <p class="cs-journey-desc">Data Manager reviews the site's response — with a 1–3 day lag.</p>
+                  <div class="cs-pain-point"><i class="fas fa-triangle-exclamation"></i> Pain Point: 21% require re-query clarification.</div>
+                </div>
+              </li>
+
+              <li class="cs-journey-step cs-journey-step--crisis">
+                <div class="cs-journey-num">6</div>
+                <div class="cs-journey-content">
+                  <h4 class="cs-journey-title">Re-Query Issued <span class="cs-crisis-tag">21% of Cases</span></h4>
+                  <p class="cs-journey-desc">A new query is issued for the same case. If the site is unsure, they escalate to the CRA, who escalates to the DM via email.</p>
+                  <div class="cs-pain-point cs-pain-point--crisis"><i class="fas fa-rotate-left"></i> Pain Point: Site re-works the same case. DM writes repetitive re-queries or lengthy clarification emails.</div>
+                </div>
+              </li>
+
+              <li class="cs-journey-step">
+                <div class="cs-journey-num">7</div>
+                <div class="cs-journey-content">
+                  <h4 class="cs-journey-title">Final Resolution</h4>
+                  <p class="cs-journey-desc">Query is eventually closed — but critical queries block analysis timelines.</p>
+                  <div class="cs-pain-point"><i class="fas fa-triangle-exclamation"></i> Pain Point: Critical queries block analysis timelines.</div>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+
+          <!-- Big Takeaways -->
+          <div class="cs-subsection" id="takeaways">
+            <h2 class="cs-h2">Big Takeaways</h2>
+            <div class="cs-takeaway-grid">
+              <div class="cs-takeaway-card">
+                <div class="cs-takeaway-icon" style="background:rgba(173,161,209,0.25);color:var(--deep-base)"><i class="fas fa-magnifying-glass"></i></div>
+                <h4 class="cs-takeaway-title">Competitive Whitespace</h4>
+                <p class="cs-takeaway-desc">No EDC (Medidata Rave, Veeva Vault) offers real-time query context at response time — only static text + email.</p>
+              </div>
+              <div class="cs-takeaway-card">
+                <div class="cs-takeaway-icon" style="background:var(--terra-pale);color:var(--terracotta)"><i class="fas fa-arrow-trend-down"></i></div>
+                <h4 class="cs-takeaway-title">Structural Shift</h4>
+                <p class="cs-takeaway-desc">RBQM reduces total query volume, making efficient resolution of remaining complex queries mission-critical.</p>
+              </div>
+              <div class="cs-takeaway-card">
+                <div class="cs-takeaway-icon" style="background:rgba(230,184,85,0.25);color:var(--deep-base)"><i class="fas fa-user-clock"></i></div>
+                <h4 class="cs-takeaway-title">User Behaviour</h4>
+                <p class="cs-takeaway-desc">Sites spend time digging through docs; DMs write repetitive clarification emails — both are solvable with contextual AI guidance.</p>
+              </div>
+              <div class="cs-takeaway-card">
+                <div class="cs-takeaway-icon" style="background:rgba(166,103,131,0.22);color:var(--deep-base)"><i class="fas fa-robot"></i></div>
+                <h4 class="cs-takeaway-title">Proven Pattern</h4>
+                <p class="cs-takeaway-desc">Regulated copilots (e.g., MS Healthcare) show that human workflow augmentation is viable — even in highly regulated industries.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Problem -->
+          <div class="cs-subsection" id="problem">
+            <h2 class="cs-h2">Problem</h2>
+            <div class="cs-problem-grid">
+              <div class="cs-problem-card">
+                <span class="cs-problem-num">01</span>
+                <h4 class="cs-problem-title">Re-query and Burnout Loop</h4>
+                <p class="cs-p">Sites receive queries with little context, dig through 50-page eCRF guides, and send best-guess responses; DMs then re-query 21% of them, rewriting similar clarifications by email and increasing burnout on both sides.</p>
+              </div>
+              <div class="cs-problem-card">
+                <span class="cs-problem-num">02</span>
+                <h4 class="cs-problem-title">No Real-Time Query Guidance</h4>
+                <p class="cs-p">Existing EDC systems (Rave, Vault, Inform) only provide static query text and email chains—there is no real-time assistant to explain why a query exists and suggest compliant resolution options at the moment the site is responding.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Goal -->
+          <div class="cs-subsection" id="goal">
+            <h2 class="cs-h2">The Goal</h2>
+
+            <div class="cs-goal-section-label">User Success</div>
+            <div class="cs-goal-grid" style="margin-bottom:1.25rem;">
+              <div class="cs-goal-item">
+                <div class="cs-goal-icon" style="background:rgba(173,161,209,0.25);color:var(--deep-base)"><i class="fas fa-clipboard-user"></i></div>
+                <div>
+                  <p class="cs-goal-who">Site Coordinator</p>
+                  <p class="cs-goal-desc">Reduced digging through 50-page eCRF completion guidelines; less coordination with CRAs when stuck; faster time to clean query counts in the database.</p>
+                </div>
+              </div>
+              <div class="cs-goal-item">
+                <div class="cs-goal-icon" style="background:var(--terra-pale);color:var(--terracotta)"><i class="fas fa-table-cells"></i></div>
+                <div>
+                  <p class="cs-goal-who">Data Manager</p>
+                  <p class="cs-goal-desc">Less re-querying; less time to review and write queries; fewer repeated emails to CRAs and sites.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cs-goal-section-label">Business Success</div>
+            <div class="cs-goal-grid" style="margin-bottom:1.25rem;">
+              <div class="cs-goal-item" style="grid-column: 1 / -1;">
+                <div class="cs-goal-icon" style="background:rgba(230,184,85,0.25);color:var(--deep-base)"><i class="fas fa-building"></i></div>
+                <div>
+                  <p class="cs-goal-who">Sponsor / CRO / Study</p>
+                  <p class="cs-goal-desc">Faster time to close queries; shorter time to database lock; higher quality data, faster.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             3. DEVELOP
+        â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section class="cs-section" id="develop">
+          <div class="cs-phase-label">
+            <span class="cs-phase-num">3</span>
+            <span class="cs-phase-name">Develop</span>
+          </div>
+
+          <div class="cs-subsection">
+            <h2 class="cs-h2">Feature Prioritization &amp; MVP Definition</h2>
+
+            <!-- Feature scoring table -->
+            <div class="cs-feature-table-wrap">
+              <table class="cs-feature-table">
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Reach</th>
+                    <th>Impact</th>
+                    <th>Confidence</th>
+                    <th>Effort</th>
+                    <th>Result</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="cs-feature-row--mvp">
+                    <td><strong>"Why?" button</strong></td>
+                    <td>100%</td>
+                    <td>High</td>
+                    <td>High</td>
+                    <td>Med</td>
+                    <td><span class="cs-mvp-badge cs-mvp-badge--yes">MVP</span></td>
+                  </tr>
+                  <tr class="cs-feature-row--mvp">
+                    <td><strong>Chat avatar</strong></td>
+                    <td>60%</td>
+                    <td>High</td>
+                    <td>Med</td>
+                    <td>High</td>
+                    <td><span class="cs-mvp-badge cs-mvp-badge--yes">MVP</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Analytics</strong></td>
+                    <td>40%</td>
+                    <td>Med</td>
+                    <td>Med</td>
+                    <td>Med</td>
+                    <td><span class="cs-mvp-badge cs-mvp-badge--v2">V2</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="cs-h3-sub">Final Solution — Core Flow</h3>
+            <ol class="cs-flow-list">
+              <li class="cs-flow-step">
+                <div class="cs-flow-num">1</div>
+                <div>
+                  <p class="cs-flow-title">Site opens query</p>
+                  <p class="cs-flow-desc">A <strong>"Why?"</strong> button appears for site coordinators to select if they choose.</p>
+                </div>
+              </li>
+              <li class="cs-flow-step">
+                <div class="cs-flow-num">2</div>
+                <div>
+                  <p class="cs-flow-title">Popup: Context &amp; Guidance</p>
+                  <p class="cs-flow-desc">Query intent + eCRF reference + resolution examples are surfaced in a popup.</p>
+                </div>
+              </li>
+              <li class="cs-flow-step">
+                <div class="cs-flow-num">3</div>
+                <div>
+                  <p class="cs-flow-title">[Optional] Chat</p>
+                  <p class="cs-flow-desc"><em>"I'm still confused about how to solve this query."</em><br/>
+                  DM chat: <em>"For this query, it is requesting you to verify the start date of the drug admin as this is the same as the start date from Week X (it is duplicated)."</em></p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="cs-demo-media">
+              <video class="cs-demo-video" src="../images/virtual-dm-assistant-demo.mp4" autoplay muted loop playsinline preload="metadata"></video>
+              <p class="cs-video-caption">Prototype of the Virtual DM Assistant embedded directly in the EDC query view.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             4. DELIVER
+        â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section class="cs-section" id="deliver">
+          <div class="cs-phase-label">
+            <span class="cs-phase-num">4</span>
+            <span class="cs-phase-name">Deliver</span>
+          </div>
+
+          <!-- GTM -->
+          <div class="cs-subsection" id="gtm">
+            <h2 class="cs-h2">Launch &amp; GTM Strategy</h2>
+            <p class="cs-p" style="margin-bottom:1rem;"><strong>Pilot approach (3 months):</strong></p>
+            <div class="cs-gtm-phases">
+
+              <div class="cs-gtm-phase">
+                <div class="cs-gtm-phase-header">
+                  <span class="cs-gtm-phase-badge cs-gtm-phase-badge--0">Study Selection</span>
+                  <h4 class="cs-gtm-phase-title">1 Oncology Phase 3 Maintenance + 1 New Phase 3 Oncology Study</h4>
+                </div>
+              </div>
+
+              <div class="cs-gtm-phase">
+                <div class="cs-gtm-phase-header">
+                  <span class="cs-gtm-phase-badge cs-gtm-phase-badge--1">Sites</span>
+                  <h4 class="cs-gtm-phase-title">20 High-Performing Sites</h4>
+                </div>
+                <p class="cs-p">Low training burden — chosen to reduce confounding variables in pilot data.</p>
+              </div>
+
+              <div class="cs-gtm-phase">
+                <div class="cs-gtm-phase-header">
+                  <span class="cs-gtm-phase-badge cs-gtm-phase-badge--2">Rollout</span>
+                  <h4 class="cs-gtm-phase-title">Opt-in Button for 50% of Queries</h4>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="cs-channels-box">
+              <p class="cs-channels-label">Channels</p>
+              <ul class="cs-ul">
+                <li>Site training webinars</li>
+                <li>EDC nudge when site coordinator logs in after the feature is implemented</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Metrics -->
+          <div class="cs-subsection" id="metrics">
+            <h2 class="cs-h2">Measuring Success</h2>
+            <div class="cs-metrics-grid">
+
+              <div class="cs-metric-card cs-metric-card--star">
+                <div class="cs-metric-icon"><i class="fas fa-star"></i></div>
+                <p class="cs-metric-type">North Star Metric</p>
+                <p class="cs-metric-text">Re-query rate: <strong>21% → 12%</strong></p>
+              </div>
+
+              <div class="cs-metric-card">
+                <div class="cs-metric-icon" style="color:var(--purple)"><i class="fas fa-arrow-trend-up"></i></div>
+                <p class="cs-metric-type">Leading Indicators</p>
+                <ul class="cs-metric-list">
+                  <li>Button click rate &gt; 60%</li>
+                  <li>Chat usage &gt; 20%</li>
+                </ul>
+              </div>
+
+              <div class="cs-metric-card">
+                <div class="cs-metric-icon" style="color:var(--rose)"><i class="fas fa-chart-bar"></i></div>
+                <p class="cs-metric-type">Lagging Indicators</p>
+                <ul class="cs-metric-list">
+                  <li>Query closure: 52 → 36 days</li>
+                </ul>
+              </div>
+
+              <div class="cs-metric-card cs-metric-card--counter">
+                <div class="cs-metric-icon" style="color:var(--rose)"><i class="fas fa-shield-halved"></i></div>
+                <p class="cs-metric-type">Counter Metric</p>
+                <ul class="cs-metric-list">
+                  <li>Site response time increase: +10% max</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Risks -->
+          <div class="cs-subsection" id="risks">
+            <h2 class="cs-h2">Risks &amp; Tradeoffs</h2>
+            <div class="cs-risk-grid">
+
+              <div class="cs-risk-card">
+                <div class="cs-risk-header">
+                  <i class="fas fa-scale-balanced" style="color:var(--rose)"></i>
+                  <h4 class="cs-risk-title">Regulatory: Leading the Site Coordinators</h4>
+                </div>
+                <p class="cs-risk-desc">Chat guidance interpreted as data direction.</p>
+                <div class="cs-risk-mitigation">
+                  <span class="cs-risk-mit-label">Mitigation</span>
+                  <p>100% non-prescriptive language (<em>"Common resolutions include..."</em>), full audit trail, regulatory pre-validation.</p>
+                </div>
+                <p class="cs-risk-tradeoff"><strong>Tradeoff:</strong> Sacrifices some guidance richness for GCP compliance.</p>
+              </div>
+
+              <div class="cs-risk-card">
+                <div class="cs-risk-header">
+                  <i class="fas fa-brain" style="color:var(--rose)"></i>
+                  <h4 class="cs-risk-title">AI Bias / Hallucination</h4>
+                </div>
+                <p class="cs-risk-desc">Chat gives wrong eCRF/protocol interpretation → data quality worse.</p>
+                <div class="cs-risk-mitigation">
+                  <span class="cs-risk-mit-label">Mitigation</span>
+                  <p>Study-specific document grounding only.</p>
+                </div>
+                <p class="cs-risk-tradeoff"><strong>Tradeoff:</strong> Conservative guidance vs. comprehensive coverage.</p>
+              </div>
+
+              <div class="cs-risk-card">
+                <div class="cs-risk-header">
+                  <i class="fas fa-chart-line" style="color:var(--purple)"></i>
+                  <h4 class="cs-risk-title">RBQM Query Reduction</h4>
+                </div>
+                <p class="cs-risk-desc">Too few queries remain for ROI as RBQM reduces total volume.</p>
+                <div class="cs-risk-mitigation">
+                  <span class="cs-risk-mit-label">Mitigation</span>
+                  <p>Scope to complex queries (protocol interpretation, lab adjudication).</p>
+                </div>
+                <p class="cs-risk-tradeoff"><strong>Tradeoff:</strong> Smaller market vs. higher impact per query.</p>
+              </div>
+
+              <div class="cs-risk-card">
+                <div class="cs-risk-header">
+                  <i class="fas fa-shield-halved" style="color:var(--rose)"></i>
+                  <h4 class="cs-risk-title">Compliance Constraints</h4>
+                </div>
+                <p class="cs-risk-desc">Guidance must remain auditable, non-prescriptive, and grounded only in study-specific documentation.</p>
+                <div class="cs-risk-mitigation">
+                  <span class="cs-risk-mit-label">Mitigation</span>
+                  <ul class="cs-ul">
+                    <li>Use non-prescriptive phrasing (e.g., “Common resolutions include A, B”).</li>
+                    <li>Restrict grounding to protocol and study documents.</li>
+                    <li>Avoid leading queries or chats that could bias data entry.</li>
+                  </ul>
+                </div>
+                <p class="cs-risk-tradeoff"><strong>Tradeoff:</strong> Slightly less directive guidance in exchange for regulatory safety.</p>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             FUTURE ITERATIONS
+        â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section class="cs-section" id="future">
+          <h2 class="cs-h2">Future Iterations</h2>
+          <ul class="cs-ul cs-ul--spaced">
+            <li>Full chat avatar (post-regulatory validation) with clinical science query avatar.</li>
+            <li>Cross-study pattern learning (scale beyond single study) for query resolutions.</li>
+          </ul>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+             CLOSING
+        â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+        <section class="cs-section" id="closing">
+          <h2 class="cs-h2">Closing</h2>
+          <div class="cs-closing-box">
+            <p class="cs-p">Started with a 21% re-query rate wasting site and DM time. The solution delivers contextual guidance at decision time, cutting re-queries by 40% and DB lock by 2 weeks. Unlocks faster, cleaner trials.</p>
+          </div>
+        </section>
+
+        <section class="cs-references" style="font-size:0.75rem; color:rgba(0,0,0,0.6); padding:1.5rem 0 0 0;">
+          <h3 class="cs-h3-sub" style="margin-bottom:0.5rem;">References</h3>
+          <ol style="margin:0; padding-left:1.25rem;">
+            <li><a href="https://intuitionlabs.ai/articles/query-management-clinical-trials" target="_blank" rel="noopener noreferrer">Query Management in Clinical Trials: A Guide to Process &amp; Costs — IntuitionLabs</a></li>
+          </ol>
+        </section>
+
+        <!-- Back link -->
+        <div class="cs-back-footer">
+          <a href="../index.html#projects" class="btn btn--ghost">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Shivani Kadakia</span>
+          <span class="footer-divider" aria-hidden="true">·</span>
+      <span class="footer-copy">&copy; 2026</span>
+      <div class="footer-social">
+        <a href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="footer-resume" aria-label="View resume" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <span class="footer-email" title="Select to copy">sk3443@cornell.edu</span>
+        <a href="https://www.linkedin.com/in/shivani-kadakia/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../casestudy.js"></script>
+</body>
+</html>

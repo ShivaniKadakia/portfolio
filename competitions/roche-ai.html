@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roche x Microsoft AI Hackathon — Shivani Kadakia</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../casestudy.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="cs-page">
+
+  <nav class="cs-topbar">
+    <div class="cs-topbar-inner">
+      <a href="../index.html#competitions" class="cs-back">
+        <i class="fas fa-arrow-left"></i> Back to Competitions
+      </a>
+      <a href="../index.html" class="nav-logo">SK</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <header class="cs-hero cs-hero--roche">
+    <div class="cs-hero-inner">
+      <div class="cs-meta-row">
+        <span class="cs-badge cs-badge--win"><i class="fas fa-trophy"></i> 1st Place</span>
+        <span class="cs-badge cs-badge--roche">Cybersecurity</span>
+        <span class="cs-badge cs-badge--muted">Hackathon</span>
+      </div>
+      <h1 class="cs-title">Roche x Microsoft AI Hackathon</h1>
+      <p class="cs-subtitle">AI-driven solution to autogenerate draft email responses for cybersecurity analysts.</p>
+
+      <div class="cs-hypothesis-box cs-hypothesis-box--roche">
+        <p class="cs-hypothesis-label"><i class="fas fa-trophy"></i> Highlights</p>
+        <p class="cs-hypothesis-text">1st in the Implementation &amp; Innovation category · Internal Roche-wide competition</p>
+      </div>
+
+      <!-- Page contents preview -->
+      <div class="cs-hero-contents">
+        <span class="cs-hero-contents-label">On this page</span>
+        <div class="cs-hero-contents-links">
+          <a href="#overview" class="cs-hero-contents-item">Overview</a>
+          <span class="cs-hero-contents-sep" aria-hidden="true">·</span>
+          <a href="#contributions" class="cs-hero-contents-item">Core Contributions</a>
+          <span class="cs-hero-contents-sep" aria-hidden="true">·</span>
+          <a href="#demo" class="cs-hero-contents-item">Architecture</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Main ── -->
+  <main class="cs-main">
+    <div class="cs-layout cs-layout--no-sidebar">
+      <article class="cs-body">
+
+        <section class="cs-section" id="overview">
+          <h2 class="cs-h2">Overview</h2>
+          <p class="cs-p">The Roche cybersecurity team faced a high volume of repetitive user emails. Our team developed an AI-driven solution to autogenerate draft email responses for security analysts, allowing for a <strong>"human-in-the-loop"</strong> review before sending.</p>
+          <p class="cs-p">This was a pivotal learning experience where I was first introduced to <strong>Retrieval-Augmented Generation (RAG)</strong> architecture.</p>
+        </section>
+
+        <div class="cs-divider"></div>
+
+        <section class="cs-section" id="contributions">
+          <h2 class="cs-h2">Core Contributions</h2>
+          <div class="cs-takeaway-grid cs-takeaway-grid--3">
+
+            <div class="cs-takeaway-card">
+              <div class="cs-takeaway-icon" style="background:rgba(173,161,209,0.25);color:var(--deep-base)">
+                <i class="fas fa-code"></i>
+              </div>
+              <h4 class="cs-takeaway-title">Direct UI Integration</h4>
+              <p class="cs-takeaway-desc">Focused on the front-end prototype using <strong>Tampermonkey</strong>, vibe coding a custom script to inject AI functionality directly into the Gmail interface — proving the concept could live within the analysts' existing daily workflow.</p>
+            </div>
+
+            <div class="cs-takeaway-card">
+              <div class="cs-takeaway-icon" style="background:rgba(166,103,131,0.22);color:var(--deep-base)">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <h4 class="cs-takeaway-title">Operational Efficiency</h4>
+              <p class="cs-takeaway-desc">Targeted a specific pain point: the time spent drafting manual responses. By providing a <strong>"one-click" draft</strong>, we demonstrated a significant reduction in manual effort for the security team.</p>
+            </div>
+
+            <div class="cs-takeaway-card">
+              <div class="cs-takeaway-icon" style="background:rgba(230,184,85,0.25);color:var(--deep-base)">
+                <i class="fas fa-people-group"></i>
+              </div>
+              <h4 class="cs-takeaway-title">Cross-Functional Learning</h4>
+              <p class="cs-takeaway-desc">Worked to understand how back-end processes — vector searches and prompt engineering — translated into a simple, usable tool. Supported the creation of the final presentation and deliverable.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <div class="cs-divider"></div>
+
+        <section class="cs-section" id="demo">
+          <h2 class="cs-h2">Solution Architecture</h2>
+          <p class="cs-p">The diagram below shows the end-to-end flow — from raw data ingestion through to the AI-generated draft appearing directly in Gmail via our Tampermonkey script.</p>
+          <img
+            src="../images/roche-architecture.jpg"
+            alt="Architectural diagram showing the RAG pipeline: Google Drive imports raw data → Azure AI Search (vector store) → Azure Functions orchestrator → Fine-tuned LLM via Azure OpenAI → answer returned to Gmail"
+            class="cs-demo-img"
+            style="margin-top:1rem;"
+            loading="lazy"
+          />
+        </section>
+
+        <div class="cs-back-footer">
+          <a href="../index.html#competitions" class="btn btn--ghost">
+            <i class="fas fa-arrow-left"></i> Back to Competitions
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Shivani Kadakia</span>
+      <span class="footer-divider">·</span>
+      <span class="footer-copy">&copy; 2026</span>
+      <div class="footer-social">
+        <a href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="footer-resume" aria-label="View resume" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <span class="footer-email" title="Select to copy">sk3443@cornell.edu</span>
+        <a href="https://www.linkedin.com/in/shivani-kadakia/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../casestudy.js"></script>
+</body>
+</html>

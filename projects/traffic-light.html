@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic Light Safety Analysis — Shivani Kadakia</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../casestudy.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="cs-page">
+  <nav class="cs-topbar">
+    <div class="cs-topbar-inner">
+      <a href="../index.html#projects" class="cs-back">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+      </a>
+      <a href="../index.html" class="nav-logo">SK</a>
+    </div>
+  </nav>
+  <header class="cs-hero">
+    <div class="cs-hero-inner">
+      <div class="cs-meta-row">
+        <span class="cs-badge">Project</span>
+        <span class="cs-badge cs-badge--blue">Traffic Safety</span>
+        <span class="cs-badge cs-badge--blue">Data Science</span>
+        <span class="cs-badge cs-badge--muted">Personal Exploration</span>
+      </div>
+      <h1 class="cs-title">Unpacking Traffic Safety Through Data</h1>
+      <p class="cs-subtitle">What started as one near-miss at a confusing intersection in Brampton turned into a city-wide exploration of traffic signal spacing, collision data, and what “danger” actually looks like when you test it statistically.</p>
+      <div class="cs-hypothesis-box">
+        <p class="cs-hypothesis-label"><i class="fas fa-star"></i> Note</p>
+        <p class="cs-hypothesis-text">In this project, I used open data, spatial clustering, and hypothesis testing to see whether closely spaced signals really correlate with more accidents—or if the story is more nuanced than it seems from behind the wheel.</p>
+      </div>
+    </div>
+  </header>
+  <main class="cs-main">
+    <div class="cs-layout">
+      <!-- Sticky sidebar TOC -->
+      <aside class="cs-toc" aria-label="Table of contents">
+        <p class="cs-toc-label">On this page</p>
+        <nav>
+          <ol class="cs-toc-list">
+            <li><a href="#intro" class="cs-toc-link">🚦 From a "Close Call" to City-Scale Analysis</a></li>
+            <li><a href="#research" class="cs-toc-link">🔍 Research + City Follow-up</a></li>
+            <li><a href="#method" class="cs-toc-link">🛠️ The Data Project: Scaling Curiosity</a></li>
+            <li><a href="#stats" class="cs-toc-link">📊 Testing the Hypothesis</a></li>
+            <li><a href="#learnings" class="cs-toc-link">💡 What I Learned</a></li>
+            <li><a href="#closing" class="cs-toc-link">🏁 Final Reflections</a></li>
+          </ol>
+        </nav>
+      </aside>
+
+      <article class="cs-body">
+        <section class="cs-section" id="intro">
+          <h2 class="cs-h2">🚦 From a "Close Call" to City-Scale Analysis: Unpacking Traffic Safety Through Data</h2>
+          <p class="cs-p">A personal close call at a tricky traffic light in Brampton sparked a data science journey for me.  While driving south on Airport Road in Brampton, I had a terrifying moment. Two traffic lights: one at Hull Street and one at Derry Road were only 110 meters apart, and showed conflicting signals: red at Hull, green at Derry.</p>
+          <p class="cs-p">I saw the green. I didn’t see the red. And I nearly drove through the intersection at Hull.</p>
+          <p class="cs-p">Once I got home, I couldn’t stop thinking about it:</p>
+          <p class="cs-p">👉 Is this intersection actually safe?</p>
+          <p class="cs-p">👉 Is there a recommended spacing for traffic lights like this?</p>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <section class="cs-section" id="research">
+          <h2 class="cs-h2">🔍 Research + City Follow-up</h2>
+          <p class="cs-p">I dug into the Ontario Access Guidelines, which recommend 402 meters (0.25 miles) between traffic signals, nearly 4x the distance I observed.</p>
+          <p class="cs-p">Then I found a peer-reviewed paper studying how driver response time slows down when facing closely spaced signals with incongruent colors.</p>
+          <p class="cs-p">🔗 Research article: <a href="https://www.sciencedirect.com/science/article/pii/S2666691X22000112" target="_blank" rel="noopener noreferrer">https://www.sciencedirect.com/science/article/pii/S2666691X22000112</a></p>
+          <p class="cs-p">I wrote to the Region of Peel, shared the data and guidelines, and followed up until I received a response:</p>
+          <p class="cs-p">✅ They acknowledged the safety issue and committed to installing optically programmable signal heads to reduce confusion.</p>
+          <p class="cs-p">This experience got me thinking more about the city overall: Are there other intersections like this? And can data help us find them?</p>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <section class="cs-section" id="method">
+          <h2 class="cs-h2">🛠️ The Data Project: Scaling Curiosity</h2>
+          <p class="cs-p">I decided to "vibe code" a methodology to identify these intersections at scale. Using Ottawa as my primary test case due to its robust open data, the process involved:</p>
+          <p class="cs-p">Gathering Data: Fetching thousands of traffic signal coordinates via OpenStreetMap.</p>
+          <p class="cs-p">Clustering Signals: Applying the DBSCAN algorithm to group individual signals into distinct intersection clusters.</p>
+          <p class="cs-p">Spatial Flagging: Identifying signal pairs spaced between 50m–200m apart to find potential "danger zones."</p>
+          <p class="cs-p">Integrating Accident Data: Merging thousands of collision records with my spatial flags, a task that required data cleaning and coordinate transformation.</p>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <section class="cs-section" id="stats">
+          <h2 class="cs-h2">📊 Testing the Hypothesis: The Statistical Deep Dive</h2>
+          <p class="cs-p">After running the analysis for Ottawa, the results were eye-opening. I identified over 500 intersections that did not meet the recommended 400m spacing guidelines. To move into the science, I performed three core statistical tests to see if these flagged intersections were actually more dangerous than standard ones.</p>
+          <p class="cs-p"><strong>1. Mann-Whitney U Test (Accident Frequency)</strong></p>
+          <p class="cs-p">Why: I needed to compare the number of accidents at "flagged" intersections versus "non-flagged" ones. Since accident counts aren't normally distributed (most intersections have zero accidents), a standard t-test wouldn't work.</p>
+          <p class="cs-p">Result: p &gt; 0.05. There was no statistically significant difference in accident frequency based on spacing alone.</p>
+          <p class="cs-p"><strong>2. Correlation Analysis (Distance Groups)</strong></p>
+          <p class="cs-p">Why: I wanted to see if the "danger" increased as the distance decreased (e.g., were 50m gaps more dangerous than 150m gaps?).</p>
+          <p class="cs-p">Result: No clear trend. Accident density remained relatively flat across all flagged distance brackets.</p>
+          <p class="cs-p"><strong>3. Chi-Square Test of Independence (Lighting Conditions)</strong></p>
+          <p class="cs-p">Why: I hypothesized that closely spaced signals might be even more confusing at night, as this situation happened at night for me. I used a Chi-Square test to see if the distribution of night-time accidents was higher at flagged sites compared to the city average.</p>
+          <p class="cs-p">Result: ❌ Not supported. Both groups showed nearly identical distributions, with the vast majority of accidents occurring in broad daylight (Figure 2)</p>
+          <figure class="cs-section" style="margin-top:1.5rem;">
+            <!-- Save heatmap image as ../images/traffic-light-heatmap.png -->
+            <img src="../images/traffic-light-heatmap.png" loading="lazy" alt="Heatmap of accident density in Ottawa with flagged intersections by spacing group" class="cs-mockup-img" />
+            <figcaption class="cs-mockup-note">Figure 1. Accident density (heatmap) with flagged intersections by spacing group across Ottawa.</figcaption>
+          </figure>
+
+          <div class="traffic-legend">
+            <p class="cs-p" style="margin-bottom:0.4rem;">Figure 1: Shows accident density (heatmap) with flagged intersections by spacing group.</p>
+            <div class="traffic-legend-dots">
+              <span class="traffic-dot">🔴 50–100m</span>
+              <span class="traffic-dot">🟠 100–150m</span>
+              <span class="traffic-dot">🟣 150–200m</span>
+            </div>
+          </div>
+
+          <figure class="cs-section" style="margin-top:1.5rem;">
+            <!-- Save lighting chart as ../images/traffic-light-lighting-conditions.png -->
+            <img src="../images/traffic-light-lighting-conditions.png" loading="lazy" alt="Bar chart comparing lighting conditions of accidents at flagged versus non-flagged intersections" class="cs-mockup-img" />
+            <figcaption class="cs-mockup-note">Figure 2. Lighting condition of accidents at flagged vs. non-flagged intersections, showing most collisions occur in daylight.</figcaption>
+          </figure>
+          <p class="cs-p">✅ Both flagged and non-flagged intersections have similar distributions, most accidents happen in daylight, not at night.</p>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <section class="cs-section" id="learnings">
+          <h2 class="cs-h2">💡 What I Learned</h2>
+          <p class="cs-p">As someone completely new to this field, the learning curve was steep. AI helped me bridge the gap for the data analysis; however, while my initial hypothesis (that short spacing equals more accidents ) wasn't supported by the Ottawa data, here are my takeaways: </p>
+          <p class="cs-p">Data Scaling Friction: I learned that data is rarely "plug and play." Transitioning the model from Ottawa to Toronto required a total transformation due to different data schemas. As a Data Manager, I expected this, but experiencing the KeyError bottlenecks firsthand reinforced the importance of robust data pipelines.</p>
+          <p class="cs-p">Technical Empathy: Navigating terminals, conda environments, and virtual setups gave me a profound respect for the "invisible" hurdles technical teams face daily.</p>
+          <p class="cs-p">Collaborative Optimization: When the code hit a performance wall, I worked with my sister, to optimize the backend and build a custom GUI. </p>
+        </section>
+
+        <div class="cs-divider" aria-hidden="true"></div>
+
+        <section class="cs-section" id="closing">
+          <h2 class="cs-h2">🏁 Final Reflections</h2>
+          <p class="cs-p">I’ve gained a new set of tools to explore new problems. I’ve learned that a "negative" result in data is still a successful result, it means the system is safer than I originally feared.</p>
+          <p class="cs-p">Please see the methodology and code on GitHub for any personal exploration for other cities.</p>
+          <p class="cs-p">Check out the Repo: https://github.com/shailikadakia/traffic-light/blob/main/README.md</p>
+        </section>
+
+        <div class="cs-back-footer">
+          <a href="../index.html#projects" class="btn btn--ghost">
+            <i class="fas fa-arrow-left"></i> Back to Projects
+          </a>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Shivani Kadakia</span>
+      <span class="footer-divider" aria-hidden="true">·</span>
+      <span class="footer-copy">&copy; 2026</span>
+      <div class="footer-social">
+        <a href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="footer-resume" aria-label="View resume" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <span class="footer-email" title="Select to copy">sk3443@cornell.edu</span>
+        <a href="https://www.linkedin.com/in/shivani-kadakia/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="../casestudy.js"></script>
+</body>
+</html>

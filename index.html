@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivani Kadakia</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SK</a>
+
+      <ul class="nav-links">
+        <li><a href="#hero"         class="nav-link active">Home</a></li>
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#competitions" class="nav-link">Competitions</a></li>
+        <li><a href="#projects"     class="nav-link">Projects</a></li>
+        <li><a href="#experience"   class="nav-link">Experience</a></li>
+        <li><a href="#interests"    class="nav-link">Interests</a></li>
+      </ul>
+
+      <div class="nav-social">
+        <a href="https://www.linkedin.com/in/shivani-kadakia/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+        <span class="nav-email-wrap">
+          <a href="#" id="nav-email-copy" aria-label="Copy email" title="Copy email"><i class="fas fa-envelope"></i></a>
+          <span id="toast-email" class="toast-email" aria-live="polite">Email copied!</span>
+        </span>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+
+    <div class="hero-inner">
+
+      <!-- LEFT: Photo -->
+      <div class="hero-left" data-animate="fade-left">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring" aria-hidden="true"></div>
+          <img src="images/headshot.png" alt="Shivani Kadakia" class="hero-photo" />
+          <div class="hero-photo-corners" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Greeting + Name + Tagline + Bio + CTAs -->
+      <div class="hero-right" data-animate="fade-right">
+        <p class="hero-greeting">Hello! I'm</p>
+        <h1 class="hero-name">Shivani Kadakia</h1>
+        <p class="hero-tagline hero-tagline--primary">
+          <strong>Cornell Tech MBA | 7+ Years in Clinical Data Operations</strong>
+        </p>
+        <p class="hero-tagline">
+          This site documents my journey from clinical data operations to an exploration of product development and systems design.
+        </p>
+        <div class="hero-ctas">
+          <a href="#competitions" class="btn btn--primary">
+            Explore Projects <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt"></i> View Resume
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="about-inner">
+
+      <div class="about-left" data-animate="fade-left">
+        <div class="about-photo-wrap">
+          <img src="images/about-photo.png" alt="Shivani Kadakia" class="about-photo" loading="lazy" onerror="this.src='images/headshot.png'" />
+          <div class="about-photo-accent" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <div class="about-right" data-animate="fade-right">
+        <p class="about-section-label">About</p>
+        <h2 class="about-heading">I find purpose in creating clarity within complexity.</h2>
+        <p class="about-bio-text">
+          Tech MBA candidate at Cornell University. My professional foundation spans banking fraud analysis (1.5 years) and clinical data management at Roche (7.5 years).
+        </p>
+        <p class="about-bio-text">
+          From banking fraud to clinical trials, I've learned to lean into details to understand how systems truly function. My work focuses on <strong>systems diagnosis and strategic design</strong> — understanding where processes break and how they can be rebuilt.
+        </p>
+        <p class="about-bio-text">
+          This site documents my professional journey and ongoing exploration of product development and systems design.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       COMPETITIONS
+  ═══════════════════════════════════════════ -->
+  <section class="cards-section" id="competitions">
+    <div class="cards-section-inner">
+      <h2 class="section-title">Competitions</h2>
+
+      <!-- Healthcare row -->
+      <div class="cards-row-label cards-row-label--case cards-row-label--lg">
+        <span class="cards-row-label-text">Healthcare</span>
+        <span class="cards-row-label-line" aria-hidden="true"></span>
+      </div>
+      <div class="cards-grid cards-grid--3">
+
+        <!-- 1: CareCast (left) -->
+        <article class="card" data-animate="fade-up">
+          <a href="competitions/carecast.html" class="card-link">
+            <div class="card-img-wrap card-img-wrap--carecast">
+              <img src="images/carecast-logo.png" alt="CareCast" class="card-carecast-logo" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--win"><i class="fas fa-trophy"></i> 1st Place</span>
+              <h3 class="card-title">Climate &amp; Health Hackathon</h3>
+              <p class="card-sub">AI-powered health companion for extreme weather events</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 2: Rutgers (centre) -->
+        <article class="card" data-animate="fade-up" style="--delay:0.1s">
+          <a href="competitions/rutgers.html" class="card-link">
+            <div class="card-img-wrap card-img-wrap--pramana">
+              <img src="images/pramana-logo.png" alt="Pramana" class="card-pramana-logo" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--win"><i class="fas fa-medal"></i> Runner-Up</span>
+              <h3 class="card-title">Rutgers Health Hack 2025</h3>
+              <p class="card-sub">AI-powered credentialing companion for physician onboarding</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+        <!-- 3: AstraZeneca (right) -->
+        <article class="card" data-animate="fade-up" style="--delay:0.2s">
+          <a href="competitions/az-healthcare.html" class="card-link">
+            <div class="card-img-wrap" style="padding:0;overflow:hidden;">
+              <img src="images/az-team-photo.png" alt="Healthcare case competition team at Johns Hopkins" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 60%;" />
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--blue"><i class="fas fa-chess"></i> Strategy</span>
+              <h3 class="card-title">Healthcare Business Case Competitions</h3>
+              <p class="card-sub">National &amp; corporate competitions across GTM, portfolio expansion, digital transformation, and operations</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Technology row -->
+      <div class="cards-row-label cards-row-label--case cards-row-label--lg" style="margin-top:3rem;">
+        <span class="cards-row-label-text">Technology</span>
+        <span class="cards-row-label-line" aria-hidden="true"></span>
+      </div>
+      <div class="cards-grid cards-grid--3">
+
+        <article class="card" data-animate="fade-up">
+          <a href="competitions/microsoft-ai.html" class="card-link">
+            <div class="card-img-wrap" style="padding:0;overflow:hidden;">
+              <img src="images/microsoft-team-photo.png" alt="Microsoft AI in Retail team at Microsoft HQ NYC" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;" />
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--win"><i class="fas fa-trophy"></i> 1st Place</span>
+              <h3 class="card-title">AI in Retail Case Competition with Microsoft</h3>
+              <p class="card-sub">Responsible AI principles applied to deliver personalized shopping experiences</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-animate="fade-up" style="--delay:0.1s">
+          <a href="competitions/roche-ai.html" class="card-link">
+            <div class="card-img-wrap card-img-wrap--roche">
+              <img src="images/roche-logo.png" alt="Roche" class="card-roche-logo" loading="lazy" />
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--win"><i class="fas fa-trophy"></i> 1st Place</span>
+              <h3 class="card-title">Roche x Microsoft AI Hackathon</h3>
+              <p class="card-sub">AI-driven solution to autogenerate draft email responses for cybersecurity analysts</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════ -->
+  <section class="cards-section cards-section--alt" id="projects">
+    <div class="cards-section-inner">
+      <h2 class="section-title">Projects</h2>
+
+      <p class="cards-case-note">Case studies in end-to-end product discovery and systems design.</p>
+
+      <!-- Healthcare case studies -->
+      <div class="cards-row-label cards-row-label--case cards-row-label--lg">
+        <span class="cards-row-label-text">Healthcare Case Studies</span>
+        <span class="cards-row-label-line" aria-hidden="true"></span>
+      </div>
+      <div class="cards-grid cards-grid--3">
+
+        <article class="card card--case" data-animate="fade-up">
+          <a href="projects/recruitsim.html" class="card-link">
+            <div class="card-img-wrap card-img-wrap--band" style="--band-color:#C4622D">
+              <img src="images/recruitsim-main.png" alt="RecruitSim case study preview" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--case">Case Study</span>
+              <h3 class="card-title">RecruitSim</h3>
+              <p class="card-sub">Impact of protocol design on clinical trial recruitment operations</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="card card--case" data-animate="fade-up" style="--delay:0.1s">
+          <a href="projects/cdm-assistant.html" class="card-link">
+            <div class="card-img-wrap card-img-wrap--band" style="--band-color:#2B6CB0">
+              <img src="images/virtual-dm-main.png" alt="Virtual DM Assistant case study preview" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--case">Case Study</span>
+              <h3 class="card-title">Virtual DM Assistant</h3>
+              <p class="card-sub">Reducing re-queries with contextual AI guidance in the EDC</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <!-- Other projects -->
+      <div class="cards-row-label cards-row-label--case cards-row-label--lg" style="margin-top:3rem;">
+        <span class="cards-row-label-text">Other Projects</span>
+        <span class="cards-row-label-line" aria-hidden="true"></span>
+      </div>
+      <div class="cards-grid cards-grid--3">
+
+        <article class="card" data-animate="fade-up">
+          <a href="projects/traffic-light.html" class="card-link">
+            <div class="card-img-wrap card-img-wrap--band" style="--band-color:#D4A017">
+              <img src="images/traffic-light-main.jpg" alt="Traffic Light systems design project preview" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--gold">Systems Design</span>
+              <h3 class="card-title">Traffic Light Project</h3>
+              <p class="card-sub">A pure systems design project — how physical and digital infrastructure intersect</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="card" data-animate="fade-up" style="--delay:0.1s">
+          <a href="projects/easeeats.html" class="card-link">
+            <div class="card-img-wrap card-img-wrap--band card-img-wrap--full" style="--band-color:#2B6CB0">
+              <img src="images/ease-eats-main.png" alt="EaseEats app case study preview" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--blue">App</span>
+              <h3 class="card-title">EaseEats</h3>
+              <p class="card-sub">Food delivery app for allergy-aware dining</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="card card--case" data-animate="fade-up" style="--delay:0.2s">
+          <a href="projects/toastmasters.html" class="card-link">
+            <div class="card-img-wrap card-img-wrap--band card-img-wrap--logo" style="--band-color:#7D2E3A">
+              <img src="images/toastmasters-main.png" alt="Toastmasters AI case study preview" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="card-badge card-badge--case">Case Study</span>
+              <h3 class="card-title">Toastmasters AI Case Study</h3>
+              <p class="card-sub">A vision for a digital-first membership experience</p>
+              <span class="card-cta">See more <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE
+  ═══════════════════════════════════════════ -->
+  <section class="cards-section" id="experience">
+    <div class="cards-section-inner">
+      <h2 class="section-title">Work Experience &amp; Education</h2>
+
+      <!-- Staggered timeline (desktop) -->
+      <section class="staggered-timeline-container">
+        <div class="timeline-grid">
+          <div class="timeline-main-line"></div>
+
+          <div class="timeline-item education-cornell" data-type="school">
+            <span class="dot school-cornell"></span>
+            <div class="timeline-card">
+              <h3>Cornell University</h3>
+              <p class="degree">MBA (Cornell Tech)</p>
+              <p class="details">New York</p>
+              <p class="details">June 2025 – May 2026</p>
+              <p class="impact">
+                ★ Fried Fellowship — Awarded to 2 of 75 students for academic excellence and leadership; ★ Johnson Dean’s List — Awarded to the top 10% of students.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item education-toronto" data-type="school">
+            <span class="dot school-toronto"></span>
+            <div class="timeline-card">
+              <h3>University of Toronto</h3>
+              <p class="degree">Master of Biotechnology</p>
+              <p class="details">Toronto, ON</p>
+              <p class="details">May 2017 – May 2019</p>
+            </div>
+          </div>
+
+          <div class="timeline-item education-mcmaster" data-type="school">
+            <span class="dot school-mcmaster"></span>
+            <div class="timeline-card">
+              <h3>McMaster University</h3>
+              <p class="degree">Bachelor of Science</p>
+              <p class="details">Hamilton, ON</p>
+              <p class="details">Sep 2011 – Apr 2015</p>
+            </div>
+          </div>
+
+          <div class="timeline-item work-roche-leader work-low" data-type="work">
+            <span class="dot roche"></span>
+            <div class="timeline-card">
+              <h3>Roche</h3>
+              <p class="job-title">Data Sciences Product Leader — Clinical Data Management</p>
+              <p class="details">Nov 2018 – Apr 2025</p>
+              <p class="impact">Led cross-functional data management across 20+ global Phase 1–3 clinical trials. Improved data accuracy by 95% for 3,900+ records; scaled review workflows 6x. Promoted to senior in 2022.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item work-roche-associate work-low" data-type="work">
+            <span class="dot roche-associate"></span>
+            <div class="timeline-card">
+              <h3>Roche</h3>
+              <p class="job-title">Associate Data Acquisition Specialist</p>
+              <p class="details">Jan 2018 – Nov 2018</p>
+            </div>
+          </div>
+
+          <div class="timeline-item work-cibc work-low" data-type="work">
+            <span class="dot cibc"></span>
+            <div class="timeline-card">
+              <h3>CIBC</h3>
+              <p class="job-title">Fraud Chargeback Analyst</p>
+              <p class="details">Oct 2015 – Feb 2017</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Original two-column layout (mobile) -->
+      <div class="exp-layout">
+
+        <div class="exp-col">
+          <p class="exp-col-label">Work Experience</p>
+          <ol class="exp-timeline">
+
+            <li class="exp-item">
+              <div class="exp-dot exp-dot--work"></div>
+              <div class="exp-content">
+                <p class="exp-company">Roche</p>
+                <p class="exp-role">Data Sciences Product Leader — Clinical Data Management</p>
+                <p class="exp-meta">Nov 2018 – Apr 2025</p>
+                <p class="exp-desc">Led cross-functional data management across 20+ global Phase 1–3 clinical trials. Improved data accuracy by 95% for 3,900+ records; scaled review workflows 6x. Promoted to senior in 2022.</p>
+              </div>
+            </li>
+
+            <li class="exp-item">
+              <div class="exp-dot exp-dot--work"></div>
+              <div class="exp-content">
+                <p class="exp-company">Roche</p>
+                <p class="exp-role">Associate Data Acquisition Specialist</p>
+                <p class="exp-meta">Jan 2018 – Nov 2018</p>
+              </div>
+            </li>
+
+            <li class="exp-item">
+              <div class="exp-dot exp-dot--work"></div>
+              <div class="exp-content">
+                <p class="exp-company">CIBC</p>
+                <p class="exp-role">Fraud Chargeback Analyst</p>
+                <p class="exp-meta">Oct 2015 – Feb 2017</p>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+
+        <div class="exp-col">
+          <p class="exp-col-label">Education</p>
+          <ol class="exp-timeline">
+
+            <li class="exp-item">
+              <div class="exp-dot exp-dot--school"></div>
+              <div class="exp-content">
+                <p class="exp-company">Cornell University</p>
+                <p class="exp-role">MBA (Cornell Tech)</p>
+                <p class="exp-meta">New York · June 2025 – May 2026</p>
+                <p class="exp-desc exp-note">Fried Fellowship — Awarded to 2 of 75 students for academic excellence and leadership.</p>
+                <p class="exp-desc exp-note">Johnson Dean’s List — Awarded to the top 10% of students.</p>
+              </div>
+            </li>
+
+            <li class="exp-item">
+              <div class="exp-dot exp-dot--school"></div>
+              <div class="exp-content">
+                <p class="exp-company">University of Toronto</p>
+                <p class="exp-role">Master of Biotechnology</p>
+                <p class="exp-meta">Toronto, ON · May 2017 – May 2019</p>
+              </div>
+            </li>
+
+            <li class="exp-item">
+              <div class="exp-dot exp-dot--school"></div>
+              <div class="exp-content">
+                <p class="exp-company">McMaster University</p>
+                <p class="exp-role">Bachelor of Science</p>
+                <p class="exp-meta">Hamilton, ON · Sep 2011 – Apr 2015</p>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section class="cards-section" id="skills">
+    <div class="cards-section-inner">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skills-block">
+          <h3 class="skills-block-title">Product</h3>
+          <ul class="skills-list">
+            <li>Product ideation &amp; discovery
+              <ul class="skills-sublist"><li>user interviews, problem framing</li></ul>
+            </li>
+            <li>Feature prioritization</li>
+            <li>Competitive analysis</li>
+            <li>Requirements &amp; documentation</li>
+          </ul>
+        </div>
+
+        <div class="skills-block">
+          <h3 class="skills-block-title">Healthcare Domain</h3>
+          <ul class="skills-list">
+            <li>Clinical trials &amp; data management
+              <ul class="skills-sublist"><li>EDC, nCRF/eCRF, eTMF, RBQM</li></ul>
+            </li>
+            <li>Data quality, governance, FAIR principles</li>
+            <li>AI in healthcare / responsible AI</li>
+            <li>Workflow &amp; process mapping</li>
+          </ul>
+        </div>
+
+        <div class="skills-block">
+          <h3 class="skills-block-title">Communication &amp; Leadership</h3>
+          <ul class="skills-list">
+            <li>Stakeholder management
+              <ul class="skills-sublist"><li>clinicians, ops, data science, engineers</li></ul>
+            </li>
+            <li>Vendor management</li>
+            <li>Cross-functional collaboration</li>
+            <li>Coaching &amp; mentoring</li>
+            <li>Presentation development</li>
+          </ul>
+        </div>
+
+        <div class="skills-block skills-block--tools">
+          <h3 class="skills-block-title">Tools</h3>
+          <ul class="skills-list">
+            <li>Figma</li>
+            <li>Cursor</li>
+            <li>Jira</li>
+            <li>Smartsheet</li>
+            <li>SQL / R</li>
+            <li>Python</li>
+            <li>Tableau</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       INTERESTS
+  ═══════════════════════════════════════════ -->
+  <section class="cards-section cards-section--alt" id="interests">
+    <div class="cards-section-inner">
+      <h2 class="section-title">Interests</h2>
+
+      <div class="interests-layout">
+        <div class="interests-block">
+          <h3 class="interests-title">Where I’m Headed</h3>
+          <p class="interests-lead">I’m driven by the intersection of data, healthcare, and operations. I want to take what I’ve learned in clinical trials and my MBA and apply it to high-impact teams in HealthTech, Pharma, or Healthcare, in roles such as:</p>
+          <ul class="interests-list">
+            <li><strong>Product Operations</strong>: Managing the “how” to ensure scalability.</li>
+            <li><strong>Program Management</strong>: Leading cross-functional teams through complex challenges.</li>
+            <li><strong>Product Management</strong>: Building data-driven solutions that solve real problems.</li>
+          </ul>
+        </div>
+
+        <div class="interests-block">
+          <h3 class="interests-title">Hobbies</h3>
+          <p class="interests-lead">Outside of Work &amp; School, you’ll likely find me doing one of these:</p>
+          <ul class="interests-list">
+            <li><strong>Reading</strong>: I’m a huge fan of mystery novels. In 2022, I challenged myself to read 52 books in a year.</li>
+            <li><strong>Painting</strong>: I work with watercolors and acrylics, often focusing on different folk-art styles.</li>
+            <li><strong>Yoga</strong>: I’ve practiced consistently since 2020.</li>
+            <li><strong>Exploring</strong>: I truly admire the U.S. National Parks (visited 8 so far)!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-name">Shivani Kadakia</span>
+      <span class="footer-divider" aria-hidden="true">·</span>
+      <span class="footer-copy">&copy; 2026</span>
+      <div class="footer-social">
+        <a href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="footer-resume" aria-label="View resume" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <span class="footer-email" title="Click to select and copy">sk3443@cornell.edu</span>
+        <a href="https://www.linkedin.com/in/shivani-kadakia/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
