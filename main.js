@@ -67,15 +67,28 @@ animEls.forEach(el => observer.observe(el));
 /* ═══════════════════════════════════════════
    EMAIL COPY (main page nav)
 ═══════════════════════════════════════════ */
+const EMAIL = 'sk3443@cornell.edu';
+
 const navEmailCopy = document.getElementById('nav-email-copy');
 const toast = document.getElementById('toast-email');
 if (navEmailCopy && toast) {
-  const EMAIL = 'sk3443@cornell.edu';
   navEmailCopy.addEventListener('click', (e) => {
     e.preventDefault();
     navigator.clipboard.writeText(EMAIL).then(() => {
       toast.classList.add('is-visible');
       setTimeout(() => toast.classList.remove('is-visible'), 1800);
+    });
+  });
+}
+
+/* Footer email copy */
+const footerEmailCopy = document.getElementById('footer-email-copy');
+const toastFooter = document.getElementById('toast-email-footer');
+if (footerEmailCopy && toastFooter) {
+  footerEmailCopy.addEventListener('click', () => {
+    navigator.clipboard.writeText(EMAIL).then(() => {
+      toastFooter.classList.add('is-visible');
+      setTimeout(() => toastFooter.classList.remove('is-visible'), 1800);
     });
   });
 }
