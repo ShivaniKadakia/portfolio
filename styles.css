@@ -1765,6 +1765,29 @@ footer.footer::before {
 /* ═══════════════════════════════════════════
    INTERESTS SECTION
 ═══════════════════════════════════════════ */
+/* Hobbies section - full-width single block */
+.hobbies-block {
+  background: rgba(255,255,255,0.9);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(142,85,196,0.35);
+  border-left: 4px solid var(--purple);
+  padding: 2rem 2rem;
+  margin-top: 1rem;
+}
+
+.hobbies-lead {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.hobbies-block .interests-list {
+  margin: 0;
+  padding: 0;
+}
+
 .interests-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
