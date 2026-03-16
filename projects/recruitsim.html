@@ -26,7 +26,7 @@
   <!-- â”€â”€ Back nav â”€â”€ -->
   <nav class="cs-topbar">
     <div class="cs-topbar-inner">
-      <a href="../index.html#projects" class="cs-back">
+      <a onclick="gtag('event', 'back_click');" href="../index.html#projects" class="cs-back">
         <i class="fas fa-arrow-left"></i> Back to Projects
       </a>
       <a href="../index.html" class="nav-logo">SK</a>
@@ -600,7 +600,7 @@
 
         <!-- Back link -->
         <div class="cs-back-footer">
-          <a href="index.html#projects" class="btn btn--ghost">
+          <a onclick="gtag('event', 'back_click');" href="../index.html#projects" class="btn btn--ghost">
             <i class="fas fa-arrow-left"></i> Back to Projects
           </a>
         </div>
@@ -616,9 +616,11 @@
       <span class="footer-divider" aria-hidden="true">Â·</span>
       <span class="footer-copy">&copy; 2026</span>
       <div class="footer-social">
-        <a href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="footer-resume" aria-label="View resume" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <a onclick="gtag('event', 'resume_click');" href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="footer-resume" aria-label="View resume" target="_blank" rel="noopener noreferrer">View Resume</a>
+
         <span class="footer-email" title="Select to copy">sk3443@cornell.edu</span>
-        <a href="https://www.linkedin.com/in/shivani-kadakia/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+        <a onclick="gtag('event', 'linkedin_click');" href="https://www.linkedin.com/in/shivani-kadakia/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+
       </div>
     </div>
   </footer>

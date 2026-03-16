@@ -32,18 +32,20 @@
       <a href="#hero" class="nav-logo">SK</a>
 
       <ul class="nav-links">
-        <li><a href="#about"        class="nav-link">About</a></li>
-        <li><a href="#competitions" class="nav-link">Competitions</a></li>
-        <li><a href="#projects"     class="nav-link">Projects</a></li>
-        <li><a href="#experience"   class="nav-link">Experience</a></li>
-        <li><a href="#hobbies"      class="nav-link">Hobbies</a></li>
-        <li><a href="#skills"       class="nav-link">Skills</a></li>
-      </ul>
+  <li><a href="#about"        onclick="gtag('event', 'nav_click', {'section':'about'});" class="nav-link">About</a></li>
+  <li><a href="#competitions" onclick="gtag('event', 'nav_click', {'section':'competitions'});" class="nav-link">Competitions</a></li>
+  <li><a href="#projects"     onclick="gtag('event', 'nav_click', {'section':'projects'});" class="nav-link">Projects</a></li>
+  <li><a href="#experience"   onclick="gtag('event', 'nav_click', {'section':'experience'});" class="nav-link">Experience</a></li>
+  <li><a href="#hobbies"      onclick="gtag('event', 'nav_click', {'section':'hobbies'});" class="nav-link">Hobbies</a></li>
+  <li><a href="#skills"       onclick="gtag('event', 'nav_click', {'section':'skills'});" class="nav-link">Skills</a></li>
+</ul>
+
 
       <div class="nav-social">
-        <a href="https://www.linkedin.com/in/shivani-kadakia/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+       <a href="https://www.linkedin.com/in/shivani-kadakia/" onclick="gtag('event', 'linkedin_click');" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
         <span class="nav-email-wrap">
-          <a href="#" id="nav-email-copy" aria-label="Copy email" title="Copy email"><i class="fas fa-envelope"></i></a>
+          <a href="#" onclick="gtag('event', 'email_click');" id="nav-email-copy" aria-label="Copy email" title="Copy email"><i class="fas fa-envelope"></i></a>
+
           <span id="toast-email" class="toast-email" aria-live="polite">Email copied!</span>
         </span>
       </div>
@@ -78,10 +80,10 @@
           Applying 7+ years of clinical data science product leadership to build human-centric products. Cornell Tech MBA focusing on Systems Design and Product Strategy
         </p>
         <div class="hero-ctas">
-          <a href="#competitions" class="btn btn--primary">
+          <a onclick="gtag('event', 'cta_click', {'cta':'explore_portfolio'});" href="#competitions" class="btn btn--primary">
             Explore my Portfolio <i class="fas fa-arrow-right"></i>
           </a>
-          <a href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
+          <a onclick="gtag('event', 'resume_click');" href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i> View Resume
           </a>
         </div>
@@ -573,12 +575,12 @@
     <div class="footer-inner">
       <span class="footer-copy">&copy; <script>document.write(new Date().getFullYear())</script> Shivani Kadakia</span>
       <div class="footer-social">
-        <a href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="footer-resume" aria-label="View resume" target="_blank" rel="noopener noreferrer">View Resume</a>
+        <a onclick="gtag('event', 'resume_click');" href="https://drive.google.com/file/d/1PNnqs80CXCNU1Djd2EkrCBvL7c3vsz_X/view" class="footer-resume" aria-label="View resume" target="_blank" rel="noopener noreferrer">View Resume</a>
         <span class="footer-email-wrap">
           <span id="toast-email-footer" class="toast-email toast-email--footer" aria-live="polite">Email copied!</span>
-          <button type="button" id="footer-email-copy" class="footer-email" title="Copy email">sk3443@cornell.edu</button>
+          <button onclick="gtag('event', 'email_click');" type="button" id="footer-email-copy" class="footer-email" title="Copy email">sk3443@cornell.edu</button>
         </span>
-        <a href="https://www.linkedin.com/in/shivani-kadakia/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+        <a onclick="gtag('event', 'linkedin_click');" href="https://www.linkedin.com/in/shivani-kadakia/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
   </footer>
