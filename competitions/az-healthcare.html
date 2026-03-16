@@ -247,5 +247,18 @@
   </footer>
 
   <script src="../casestudy.js"></script>
+
+<script>
+  document.addEventListener("click", function(event) {
+    const link = event.target.closest("a");
+    if (!link) return;
+    
+    gtag('event', 'link_click', {
+      link_text: link.innerText.trim(),
+      link_url: link.href,
+      page_path: window.location.pathname
+    });
+  });
+</script>
 </body>
 </html>
